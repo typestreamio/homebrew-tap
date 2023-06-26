@@ -5,42 +5,42 @@
 class Typestream < Formula
   desc "TypeStream CLI & toolbox"
   homepage "https://typestream.io"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/typestreamio/homebrew-tap/releases/download/v0.0.2/homebrew-tap_Darwin_arm64.tar.gz"
-      sha256 "63cf9c9a80985dcd2b467a07975527269ef24246340b79c0cf9c66d7311bcc64"
+      url "https://github.com/typestreamio/homebrew-tap/releases/download/v0.0.3/typestream_Darwin_arm64.tar.gz"
+      sha256 "82eb16529554e157c6a3b28b4e953c3d8ea127a78343138edc1af7f8e78227b2"
 
       def install
-        bin.install "homebrew-tap"
+        bin.install "typestream"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/typestreamio/homebrew-tap/releases/download/v0.0.2/homebrew-tap_Darwin_x86_64.tar.gz"
-      sha256 "dbcde9be7d3c7891d78dc66a5e65be539623aad150a468e96cc829b03c180ccb"
+      url "https://github.com/typestreamio/homebrew-tap/releases/download/v0.0.3/typestream_Darwin_x86_64.tar.gz"
+      sha256 "620c3dae054a76cac1c9093c4b809a1c5c8cb80930f9c0af66840ae43a5d7821"
 
       def install
-        bin.install "homebrew-tap"
+        bin.install "typestream"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/typestreamio/homebrew-tap/releases/download/v0.0.2/homebrew-tap_Linux_arm64.tar.gz"
-      sha256 "baf55a9cb86bd316c110b2c85c90cb88ff020c7b48175397eaf2ae6d24420403"
+      url "https://github.com/typestreamio/homebrew-tap/releases/download/v0.0.3/typestream_Linux_arm64.tar.gz"
+      sha256 "048e87a4aab8cad81d2741174152a2f84e9fb25e1fddf68ec9c96daa811f7de2"
 
       def install
-        bin.install "homebrew-tap"
+        bin.install "typestream"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/typestreamio/homebrew-tap/releases/download/v0.0.2/homebrew-tap_Linux_x86_64.tar.gz"
-      sha256 "c523a47274cac6dd234b827192debf07e77ca73291c8e1e87caeffbc5cac0431"
+      url "https://github.com/typestreamio/homebrew-tap/releases/download/v0.0.3/typestream_Linux_x86_64.tar.gz"
+      sha256 "7430f4482bacfe10c0f1fee663df6561529eb369c8772e98a932d80279f7d2dc"
 
       def install
-        bin.install "homebrew-tap"
+        bin.install "typestream"
       end
     end
   end
