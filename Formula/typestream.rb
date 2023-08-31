@@ -10,7 +10,7 @@ class Typestream < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/typestreamio/homebrew-tap/releases/download/2023.08.31+0/typestream_Darwin_arm64.tar.gz"
-      sha256 "48aa2720ae7d3c1d9175e4901c61728ca9cf30d9b07b8124546bb6f2c4164d76"
+      sha256 "3e0d4da9d912ecc7b7f350c26e0b8a6bf4875450277022de0fa077ad2f190235"
 
       def install
         bin.install "typestream"
@@ -18,7 +18,7 @@ class Typestream < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/typestreamio/homebrew-tap/releases/download/2023.08.31+0/typestream_Darwin_x86_64.tar.gz"
-      sha256 "109b85e809bc30c0427d2e703b44daa015e447882814a1bbc5066e58d6a4f307"
+      sha256 "4422f3bcea10308c142e3fb1a9b17614574b3553d0ae3c02e5279a4e9f37b4a4"
 
       def install
         bin.install "typestream"
@@ -29,7 +29,7 @@ class Typestream < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/typestreamio/homebrew-tap/releases/download/2023.08.31+0/typestream_Linux_arm64.tar.gz"
-      sha256 "0f0b26c199d92c19fd65971b144433acd9adca4070e1fa2128ad45144d7ebea5"
+      sha256 "c57bf266f4823834d08b1f6300f2dfe85a64c339d2e6374badd5865c0396240d"
 
       def install
         bin.install "typestream"
@@ -37,7 +37,7 @@ class Typestream < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/typestreamio/homebrew-tap/releases/download/2023.08.31+0/typestream_Linux_x86_64.tar.gz"
-      sha256 "dc224c550b7bda97bb1a55190d03ece5ec537f08bf31e519a2f86a430e1cd5e1"
+      sha256 "d34a2e7dc891ca33206c29a70b30e173c9790b1470b0dc6f11561be8ba0a3495"
 
       def install
         bin.install "typestream"
