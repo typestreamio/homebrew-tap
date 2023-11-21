@@ -5,20 +5,20 @@
 class Typestream < Formula
   desc "TypeStream CLI & toolbox"
   homepage "https://typestream.io"
-  version "2023.11.10+1"
+  version "2023.11.21+0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/typestreamio/homebrew-tap/releases/download/2023.11.10+1/typestream_Darwin_arm64.tar.gz"
-      sha256 "972b687e684956ca96e305474b2f3ed0e5e9a65d3664be5ac8e87edf4f5daab9"
+      url "https://github.com/typestreamio/homebrew-tap/releases/download/2023.11.21+0/typestream_Darwin_arm64.tar.gz"
+      sha256 "af9e5e37fb7604e2c05de57dd1a23c0a9cf193267ef16ce9c780bde421acdd06"
 
       def install
         bin.install "typestream"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/typestreamio/homebrew-tap/releases/download/2023.11.10+1/typestream_Darwin_x86_64.tar.gz"
-      sha256 "47f4383f100805dc8d69306ee84db98e1f38a2a42f0f699b21507e1000b05b3e"
+      url "https://github.com/typestreamio/homebrew-tap/releases/download/2023.11.21+0/typestream_Darwin_x86_64.tar.gz"
+      sha256 "940d0686959fdd7dbfeefc9d8fa980be7d260233025bd946c7d76042fe2e9561"
 
       def install
         bin.install "typestream"
@@ -28,16 +28,16 @@ class Typestream < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/typestreamio/homebrew-tap/releases/download/2023.11.10+1/typestream_Linux_arm64.tar.gz"
-      sha256 "02a2b1864d645fb7284b18d53cb46d96714f1a976ca84a9ef1dd1c83648c79e9"
+      url "https://github.com/typestreamio/homebrew-tap/releases/download/2023.11.21+0/typestream_Linux_arm64.tar.gz"
+      sha256 "3b1f339f638b184beaa8ee5af1bfd3758848b86261d3e408c39aff1d8c599984"
 
       def install
         bin.install "typestream"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/typestreamio/homebrew-tap/releases/download/2023.11.10+1/typestream_Linux_x86_64.tar.gz"
-      sha256 "0736cad4cca43562968752a018cf03f38d51986d7b7162f8b798fc9ded3992e9"
+      url "https://github.com/typestreamio/homebrew-tap/releases/download/2023.11.21+0/typestream_Linux_x86_64.tar.gz"
+      sha256 "7d736e0a097b9b99602111e8aa331ca64fbe37872528074e2b1e3a2f4ee6501c"
 
       def install
         bin.install "typestream"
